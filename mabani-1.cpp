@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-/*void moratab( int x[],int n);
+void moratab( int x[],int n);
 
 int main()
 {
@@ -56,9 +56,9 @@ int main()
     }
     return 0;
 }
-    */
+    
 //*************************** */
-/*
+
 void moratab(int x[],int n)
 {
     int temp=0;
@@ -74,34 +74,4 @@ void moratab(int x[],int n)
             }
         } 
     }
-}*/
-#include <iostream>
-using namespace std;
-
-// تعریف ساختار rectangle
-struct rectangle {
-    int length, width, area, perimeter;
-};
-
-// تابع برای محاسبه مساحت و محیط مستطیل
-void rectangleArea(rectangle &f) {
-    f.area = f.length * f.width;       // محاسبه مساحت
-    f.perimeter = 2 * (f.length + f.width); // محاسبه محیط
-}
-
-int main() {
-    rectangle f; // ایجاد یک شیء از نوع rectangle
-
-    // دریافت طول و عرض مستطیل از کاربر
-    cout << "Enter the length and width of rectangle: ";
-    cin >> f.length >> f.width;
-
-    // فراخوانی تابع برای محاسبه مساحت و محیط
-    rectangleArea(f);
-
-    // نمایش نتایج
-    cout << "Area of rectangle: " << f.area << endl;
-    cout << "Perimeter of rectangle: " << f.perimeter << endl;
-
-    return 0;
 }
